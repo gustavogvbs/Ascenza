@@ -1,0 +1,141 @@
+<div class="section-ns__test">
+  <div class="container-ns__test">
+    <div class="wrapper-ns__test">
+      <span class="widget-ns__test">gratuito</span>
+      <h3 class="title-ns__test">Registrati e visualizza corsi e articoli esclusivi</h3>
+    </div>
+
+    <div>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <button class="button-modal__test">
+                <img src="https://i.imgur.com/tWRnudT.png" alt="" />
+              </button>
+            </li>
+            <li class="glide__slide">
+              <button class="button-modal__test">
+                <img src="https://i.imgur.com/tWRnudT.png" alt="" />
+              </button>
+            </li>
+            <li class="glide__slide">
+              <button class="button-modal__test">
+                <img src="https://i.imgur.com/tWRnudT.png" alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-ns__test">
+      <p class="text-ns__test">
+        Curioso di sapere quali sono le ultime tendenze ed innovazioni in agricoltura? Vedi tutte le
+        persone che temiamo per te.
+      </p>
+      <a class="cta-btn-ns__test" href="http://">Registrati ora</a>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+<style>
+  .section-ns__test {
+    width: 100vw;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    color: #fff;
+    background-color: #19c58c;
+  }
+
+  .container-ns__test {
+    max-width: 1440px;
+    padding: 0px 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .wrapper-ns__test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .widget-ns__test {
+    display: block;
+    padding: 0px 14px;
+    background-color: #003e51;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    width: max-content;
+    margin: auto;
+    transition: opacity 150ms ease-out;
+  }
+
+  .widget-ns__test:hover {
+    opacity: 0.8;
+  }
+
+  .title-ns__test {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .text-ns__test {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    max-width: 710px;
+    margin: auto;
+  }
+
+  .cta-btn-ns__test {
+    background-color: #fff;
+    color: #003e51;
+    border-radius: 99px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+    width: max-content;
+    margin: auto;
+  }
+
+  button.button-modal__test {
+    background: transparent;
+    border: none;
+    padding: 0px;
+  }
+
+  li.glide__slide.glide__slide--active {
+    position: relative;
+    z-index: 10;
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  li.glide__slide {
+    transform: scale(0.9);
+    opacity: 0.7;
+    filter: blur(3px);
+    transition: all 200ms ease-out;
+  }
+</style>

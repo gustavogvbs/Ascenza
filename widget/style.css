@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-widget__test {
+  position: fixed;
+  z-index: 1000;
+  bottom: 28px;
+  right: 28px;
+  padding: 20px;
+  background-color: #003e51;
+  transition: all 200ms ease-out;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  max-width: 295px;
+  border-radius: 8px;
+}
+
+.container-widget__test.hide {
+  transform: translateY(calc(100% + 32px));
+}
+
+.btn-close-widget__test {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  transition: color 200ms ease-out;
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.btn-close-widget__test:hover {
+  color: #19c58c;
+}
+
+.wrapper-widget__test {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  gap: 24px;
+}
+
+.text-widget__test {
+  font-size: 14px;
+  font-family: 600;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.text-widget__test p {
+  margin: 0px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.cta-container__test {
+  display: grid;
+  grid-template-columns: max-content;
+}
+
+.cta-btn-widget__test {
+  display: flex;
+  gap: 12px;
+  padding-left: 18px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #19c58c;
+  border-radius: 99px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.cta-btn-widget__test .button__test {
+  background-color: #19c58c;
+  color: #003e51;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 8px 18px;
+  border-radius: 99px;
+}
+
+@media (max-width: 480px) {
+  .container-widget__test {
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .container-widget__test.hide {
+    transform: translateY(calc(100% + 16px));
+  }
+
+  .wrapper-widget__test {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .text-widget__test {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 150px;
+    text-wrap: balance;
+  }
+  .cta-container__test {
+    height: 30px;
+  }
+}
