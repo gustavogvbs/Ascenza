@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #003e51;
+      }
+
+      section.paragraph.paragraph--type--info-box.paragraph--view-mode--default {
+        background-color: #003e52;
+        width: 100vw;
+        left: 50%;
+        position: relative;
+        padding: 56px 0;
+        transform: translateX(-50%);
+      }
+
+      .wrapper-container__test-product {
+        display: grid;
+        grid-template-columns: 50% max-content;
+        gap: 18px 56px;
+        width: 100%;
+      }
+
+      .wrapper-video__test-product {
+        display: flex;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-content: end;
+      }
+
+      .wrapper-one__test-product {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-content: end;
+      }
+
+      .budget__test-product {
+        background-color: #faff00;
+        color: #003e51;
+        padding: 4px 14px;
+        border-radius: 6px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .title__test-product {
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 322px;
+        color: #fff;
+      }
+
+      .wrapper-two__test-product {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .text__test-product {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        color: #fff;
+      }
+
+      .button-cta__test-product {
+        display: inline-block;
+        background-color: #19c58c;
+        color: #fff;
+        border-radius: 99px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 12px 32px;
+        text-decoration: none;
+      }
+
+      @media (max-width: 756px) {
+        .wrapper-container__test-product {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          gap: 32px;
+        }
+        .wrapper-two__test-product,
+        .wrapper-one__test-product,
+        .wrapper-video__test-product {
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper-container__test-product">
+      <div class="wrapper-one__test-product">
+        <div>
+          <span class="budget__test-product">gratuito</span>
+        </div>
+        <h2 class="title__test-product">Registrati e visualizza corsi e articoli esclusivi</h2>
+      </div>
+      <div class="wrapper-video__test-product">
+        <iframe
+          width="517px"
+          height="290px"
+          data-cookieconsent="marketing"
+          src="https://www.youtube.com/embed/q6HnFv5QXjw?autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+      <div class="wrapper-two__test-product">
+        <p class="text__test-product">Tendenze ed innovazioni in agricoltura</p>
+        <div>
+          <a class="button-cta__test-product" href="">Registrati ora</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
